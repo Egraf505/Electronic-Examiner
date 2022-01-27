@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Electronic_Examiner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Height="1024" 
+        Width="1440"
+        Background="Black">
     <Grid>
-
+        <Expander HorizontalAlignment="Left" Height="100" Header="Expander" Margin="1594,85,0,0" VerticalAlignment="Top" Width="100"/>
+        <Grid HorizontalAlignment="Left" Height="988" VerticalAlignment="Center" Width="1430">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"></ColumnDefinition>
+                <ColumnDefinition Width="19*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120*"></RowDefinition>
+                <RowDefinition Height="869*"></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Window>
