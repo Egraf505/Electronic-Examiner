@@ -5,20 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Electronic_Examiner"
         mc:Ignorable="d"
-        Height="1024" 
-        Width="1440"
-        Background="Black">
+        Height="600" 
+        Width="1000"
+        Background="#808080"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
-        <Expander HorizontalAlignment="Left" Height="100" Header="Expander" Margin="1594,85,0,0" VerticalAlignment="Top" Width="100"/>
-        <Grid HorizontalAlignment="Left" Height="988" VerticalAlignment="Center" Width="1430">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="7*"></ColumnDefinition>
-                <ColumnDefinition Width="19*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="120*"></RowDefinition>
-                <RowDefinition Height="869*"></RowDefinition>
-            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="467*"/>
+        </Grid.RowDefinitions>
+                
+        <Grid Name="UserInfo" Grid.Row="0" Grid.Column="0">
+            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
+                <Label Content="Информация о пользователе"/>
+            </Border>
         </Grid>
+
+        <Grid Name="CountQuestions" Grid.Row="0" Grid.Column="1">
+            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
+                <Label Content="Колличество вопросов"/>
+            </Border>
+        </Grid>
+        
+        <Grid Name="TestList" Grid.Row="1" Grid.Column="0">
+            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
+                <StackPanel Orientation="Vertical">
+                    <Button Content="Тест"/>
+                    <Button Content="Тест"/>
+                    <Button Content="Тест"/>
+                    <Button Content="Тест"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <Grid Name="Question" Grid.Row="1" Grid.Column="1">
+            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
+                <Label Content="Frame" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </Grid>
+
     </Grid>
 </Window>
