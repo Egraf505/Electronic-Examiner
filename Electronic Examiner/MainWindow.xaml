@@ -7,47 +7,27 @@
         mc:Ignorable="d"
         Height="600" 
         Width="1000"
-        Background="#808080"
+        Background="#3C3C44"
         WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+
     <Grid>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="35*"/>
-            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="37*"/>
-            <RowDefinition Height="467*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-                
-        <Grid Name="UserInfo" Grid.Row="0" Grid.Column="0">
-            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
-                <Label Content="Информация о пользователе"/>
-            </Border>
-        </Grid>
 
-        <Grid Name="CountQuestions" Grid.Row="0" Grid.Column="1">
-            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
-                <Label Content="Колличество вопросов"/>
-            </Border>
-        </Grid>
-        
-        <Grid Name="TestList" Grid.Row="1" Grid.Column="0">
-            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
-                <StackPanel Orientation="Vertical">
-                    <Button Content="Тест"/>
-                    <Button Content="Тест"/>
-                    <Button Content="Тест"/>
-                    <Button Content="Тест"/>
+        <Grid x:Name="ListOfTests" Grid.Row="1" Grid.Column="0">
+            <Border Background="#242C34" Margin="2.5" CornerRadius="5">
+                <StackPanel x:Name="LstTests">
+                    
                 </StackPanel>
             </Border>
         </Grid>
-
-        <Grid Name="Question" Grid.Row="1" Grid.Column="1">
-            <Border BorderThickness="2" BorderBrush="Black" Background="Transparent">
-                <Label Content="Frame" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </Grid>
-
     </Grid>
 </Window>
